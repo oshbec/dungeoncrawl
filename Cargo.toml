@@ -10,3 +10,4 @@ pedantic = "warn"
 
 [dependencies]
 bracket-lib = "~0.8"
+legion = "~0.4"
