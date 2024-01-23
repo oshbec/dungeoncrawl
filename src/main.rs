@@ -76,7 +76,7 @@ impl GameState for State {
 
         self.resources.insert(ctx.key);
 
-        let current_state = self.resources.get::<TurnState>().unwrap().clone();
+        let current_state = *self.resources.get::<TurnState>().unwrap();
         match current_state {
             TurnState::AwaitingInput => self
                 .input_systems
